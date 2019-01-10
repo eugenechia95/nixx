@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'nixxsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'nixx',
         'USER': 'postgres',
         'PASSWORD': 'Everest123',
