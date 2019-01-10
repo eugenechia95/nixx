@@ -17,7 +17,7 @@
   <link href="{% static 'lib/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
   <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- Menu Stylesheet File -->
   <link href="{% static 'css/menu.css' %}" rel="stylesheet">
 
   {% block more_css %}{% endblock %}
@@ -51,16 +51,16 @@
       <div id="logo" class="pull-left">
         <!--<h1><img src="{% get_media_prefix %}/images/Picture1.max-165x165.png"></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="#body"><img src="{% get_media_prefix %}/images/Picture1.max-165x165.png" alt="" title="" /></a>
+        <a href="/"><img src="{% get_media_prefix %}/images/Picture1.max-165x165.png" alt="" title="" /></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">Technology</a></li>
+          <li class="menu-active"><a href="/">Home</a></li>
+          <li><a href="#services">Technology</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="#portfolio">Shop</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/contact-us">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

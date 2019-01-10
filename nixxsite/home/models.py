@@ -29,3 +29,10 @@ class AboutUs(Page):
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]
+    
+class ContactUs(Page):
+    intro = RichTextField(blank=True)
+
+    content_panels = Page.content_panels + [
+        FieldPanel('intro', classname="full")
+    ]
