@@ -1,0 +1,458 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load wagtailcore_tags %}
+{$ load media}
+
+{% block extra_css %}
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}">
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+{% endblock %}
+
+{% block content %}
+    {% block extra_content %}{% endblock %}
+
+      <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!--<h1><img src="{% get_media_prefix %}/images/Picture1.max-165x165.png"></h1>-->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#body"><img src="{% get_media_prefix %}/images/Picture1.max-165x165.png" alt="" title="" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#body">Home</a></li>
+          <li><a href="#about">Technology</a></li>
+          <li><a href="#services">About Us</a></li>
+          <li><a href="#portfolio">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <div class="intro-content">
+      <h2>Step into the <br><span>future</span> with<br>KickS</h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">Pre-order Now</a>
+        <a href="#portfolio" class="btn-projects scrollto">How it Works</a>
+      </div>
+    </div>
+      <!-- Should be video playing -->
+
+  </section><!-- #intro -->
+
+  <!--==========================
+    Benefits Section
+  ============================-->
+  <section id="benefits">
+
+    <div class="benefits-content">
+        <h2><span>KickS</span> makes <span>self-lacing shoes</span> a reality</h2>
+        <div class="container-fluid" >
+            <div class = "features">
+                <img src="{% static 'img/benefits/lace.png' %}" class="" alt="...">
+                <h5>No more Laces</h5>
+            </div>
+            <div class = "features">
+                <img src="{% static 'img/benefits/link.png' %}" class="" alt="...">
+                <h5>Highly compatible with shoes</h5>
+            </div>
+            <div class = "features">
+                <img src="{% static 'img/benefits/sun.png' %}" class="" alt="...">
+                <h5>Weather-proof</h5>
+            </div>
+            <div class = "features">
+                <img src="{% static 'img/benefits/press.png' %}" class="" alt="...">
+                <h5>Easy Access</h5>
+            </div>
+            <div class = "features">
+                <img src="{% static 'img/benefits/heart.png' %}" class="" alt="...">
+                <h5>Elderly-friendly</h5>
+            </div>
+            <div class = "features">
+                <img src="{% static 'img/benefits/battery.png' %}" class="" alt="...">
+                <h5>Up to 30 Days of Battery Life*</h5>
+            </div>
+        </div>
+      
+    </div>
+      <!-- Should be video playing -->
+
+  </section><!-- #intro -->
+
+  <!--==========================
+    Performance Section
+  ============================-->
+  <section id="performance">
+
+    <div class="performance-content">
+      <h2>Maximise your <br>Performance</h2>
+      <div id ="para">
+        <h3>Self-lacing shoes means better performance <br>on the track, <br>in the gym, <br>or on the court.</h3>
+      </div>
+    </div>
+  </section>
+
+    <!--==========================
+      Video Section
+    ============================-->
+
+    <section id = "autovid">
+        <video autoplay muted loop>
+          <source src="{% get_media_prefix %}/video/movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </section>
+
+  <main id="main">
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>How it Works</h2>
+          <div class="row justify-content-center">
+              <div class = "col-lg-4 align-self-center text-center ">
+                  <p class="">KickS is a patent-pending device that uses our proprietary self-lacing mechanism to provide a snug fit for all shoe wearers</p>
+              </div>
+              <div class="col-lg-5" id ="slideanimation">
+                      <div>
+                        <img src="{% static 'img/shoe1.png' %}" class="" alt="...">
+                      </div>
+                      <div>
+                        <img src="{% static 'img/shoe2.png' %}" class="" alt="...">
+                      </div>
+                      <!--<div class="container">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                    <a href="#" class="intro-banner-vdo-play-btn pinkBg" target="_blank">
+                                <i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+                                <span class="ripple pinkBg"></span>
+                                <span class="ripple pinkBg"></span>
+                                <span class="ripple pinkBg"></span>
+                                </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                      </div>-->
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><i class="fa fa-picture-o"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Fans Have to Say</h2>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                With KickS, I never have to disrupt the momentum and bend down to tie my laces during my evening runs again!
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                My kids have problems tying shoe laces and I no longer have to worry about them not being able to do so on their own.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                These reminds me of Marty McFly's self-lacing shoes from Back to The Future but even better because I get to attach them to my favorite sneakers!
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                A futuristic yet simple solution to an everyday problem. The smartest accessory to the modern footwear ever!
+                <img src="{%static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-4.jpg' %}" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                My wife has back problems and has difficulties bending over. We tend to avoid shoes with laces but no longer have to worry with KickS.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-5.jpg' %}" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3" id = "kickstarter">
+            <img src="{% static 'img/Kickstarter.png' %}" class="" alt="">
+          </div>
+          <div class="col-lg-6 text-center text-lg-left align-self-center">
+            <h3 class="cta-title align-self-center"> We are live on Kickstarter! Pre-order now for Early Bird Price!</h3>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Pre-order Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+      
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+      
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>NIXX INC</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+{% endblock %}
+
+
+{% block extra_js %}
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% get_static_prefix %}lib/jquery/jquery.min.js"></script>
+  <script src="{% get_static_prefix %}lib/jquery/jquery-migrate.min.js"></script>
+  <script src="{% get_static_prefix %}lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{% get_static_prefix %}lib/easing/easing.min.js"></script>
+  <script src="{% get_static_prefix %}lib/superfish/hoverIntent.js"></script>
+  <script src="{% get_static_prefix %}lib/superfish/superfish.min.js"></script>
+  <script src="{% get_static_prefix %}lib/wow/wow.min.js"></script>
+  <script src="{% get_static_prefix %}lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="{% get_static_prefix %}lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="{% get_static_prefix %}lib/sticky/sticky.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% get_static_prefix %}contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% get_static_prefix %}js/main.js"></script>
+
+  <script>
+      $("#slideanimation > div:gt(0)").hide();
+
+        setInterval(function() {
+          $('#slideanimation > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideanimation');
+        }, 3000);
+  </script>
+
+  {% endblock %}
