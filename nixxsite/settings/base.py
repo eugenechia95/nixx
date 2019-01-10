@@ -93,6 +93,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'nixx',
+        'USER': 'postgres',
+        'PASSWORD': 'Everest123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
